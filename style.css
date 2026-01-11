@@ -63,3 +63,12 @@ body {
   background-color: rgba(109,109,110,0.7);
   color: white;
 }
+
+/* Logo styling */
+.topbar .logo {
+  font-weight: bold;   /* makes text bold */
+  color: black;        /* makes text black */
+  font-size: 28px;     /* slightly bigger, like Netflix logo */
+  letter-spacing: 2px; /* optional: adds spacing for style */
+}
+
