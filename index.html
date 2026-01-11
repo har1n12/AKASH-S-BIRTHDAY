@@ -25,22 +25,25 @@
       <button class="Aarambiklama" onclick="playVideo()">▶ Aarambiklama</button>
       <button class="more">ℹ More Info</button>
     </div>
-    <!-- Video element hidden by default -->
-<video id="birthdayVideo" width="800" controls style="display:none; margin-top: 20px;">
-  <source src="https://drive.google.com/uc?export=download&id=1nYckxVZ2psT0WgjcyJFwBpnTDMD5eZ5z" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <iframe id="birthdayVideo" 
+        src="https://drive.google.com/file/d/1nYckxVZ2psT0WgjcyJFwBpnTDMD5eZ5z/preview"  
+        width="800" 
+        height="450" 
+        style="display:none; border:none; margin-top:20px;" 
+        allow="autoplay">
+</iframe>
   </div>
 </section>
   <script>
-  function playVideo() {
-    const video = document.getElementById('birthdayVideo');
-    video.style.display = 'block';                 // Shows the video
-    video.scrollIntoView({behavior: "smooth"});    // Scrolls page to the video
-    video.play();                                  // Starts playing
-  }
+function playVideo() {
+    const video = document.getElementById('birthdayVideo'); // find the iframe
+    video.style.display = 'block';                        // show it
+    video.scrollIntoView({behavior: "smooth"});           // scroll page to video
+}
 </script>
+
 </body>
 </html>
+
 
 
