@@ -1,8 +1,10 @@
+/* Reset and basic styles */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hero section with background collage */
 .hero {
   height: 100vh;
   background-image: url("background.jpg"); /* your uploaded collage */ 
@@ -23,6 +25,7 @@ body {
   );
 }
 
+/* Hero content (text + buttons) */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -45,6 +48,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* Buttons styling */
 .buttons button {
   padding: 12px 35px;
   margin: 0 10px;
@@ -66,9 +70,17 @@ body {
 
 /* Logo styling */
 .topbar .logo {
-  font-weight: bold;   /* makes text bold */
-  color: black;        /* makes text black */
-  font-size: 28px;     /* slightly bigger, like Netflix logo */
-  letter-spacing: 2px; /* optional: adds spacing for style */
+  font-weight: bold;
+  color: black;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+/* Birthday video styling */
+#birthdayVideo {
+  display: none;           /* hidden at first */
+  margin: 20px auto;       /* center horizontally */
+  border-radius: 10px;     /* rounded corners */
+  max-width: 90%;          /* responsive on smaller screens */
 }
 
