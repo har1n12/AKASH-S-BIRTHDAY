@@ -22,12 +22,25 @@
     </p>
 
     <div class="buttons">
-      <button class="Aarambiklama">▶ Aarambiklama</button>
+      <button class="Aarambiklama" onclick="playVideo()">▶ Aarambiklama</button>
       <button class="more">ℹ More Info</button>
     </div>
+    <!-- Video element hidden by default -->
+<video id="birthdayVideo" width="800" controls style="display:none; margin-top: 20px;">
+  <source src="https://drive.google.com/uc?export=download&id=1nYckxVZ2psT0WgjcyJFwBpnTDMD5eZ5z" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   </div>
 </section>
-
+  <script>
+  function playVideo() {
+    const video = document.getElementById('birthdayVideo');
+    video.style.display = 'block';                 // Shows the video
+    video.scrollIntoView({behavior: "smooth"});    // Scrolls page to the video
+    video.play();                                  // Starts playing
+  }
+</script>
 </body>
 </html>
+
 
